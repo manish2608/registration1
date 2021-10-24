@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .main {
+            width: 100%;
+            height: 100%;
+            background-image: url("pexels-photo-1172849.jpeg");
+            border: 2px solid cadetblue;
+        }
+        
+        .container {
+            width: 45%;
+            height: 80%;
+            background-color: rgb(236, 241, 241);
+            box-shadow: 10px 0px 10px 0px rgb(32, 31, 31);
+            margin: 5% 10% 5% 27%;
+            text-align: center;
+            border-radius: 150px;
+        }
+        
+        .container:hover {
+            background-color: cornflowerblue;
+        }
+        
+        .container h1:hover {
+            color: rgb(237, 100, 107);
+        }
+        
+        button {
+            border-radius: 5px;
+            box-shadow: 2px 0px 2px 0px black;
+        }
+        
+        button a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div>
+                <h1>Registration Form</h1>
+            </div>
+            <div>
+                <form action="">
+                    <table cellspacing="2" align="center" cellpadding="8" border="0">
+                        <tr>
+                            <td align="right">Enter Name :</td>
+                            <td><input type="text" placeholder="" id="t1" class="tb" required minlength="4" pattern="[a-Z]" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Enter Email ID :</td>
+                            <td><input type="text" placeholder="" id="t2" class="tb" required pattern="[.@gmail.com]" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Enter mobile no. :</td>
+                            <td><input type="number" placeholder="" id="t3" class="tb" required minlength="10" maxlength="10" pattern="[0-9]" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">password :</td>
+                            <td><input type="password" placeholder="" id="t4" class="tb" required /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Confirm Passwor:</td>
+                            <td><input type="password" placeholder="" id="" class="tb" required/></td>
+                        </tr>
+                        <tr>
+                            <td align="right">D.O.B :</td>
+                            <td><input type="date" placeholder="" id="" class="tb" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td><input type="radio" name="gender" required/>Male
+                                <input type="radio" name="gender" required /> Female</td>
+                        </tr>
+                        <tr>
+                            <td align="right">country :</td>
+                            <td><select name="country" id="t5" class="tb">
+                                <option value="-1" selected>select..</option>
+                                <option value="india">india</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="China">China</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td align="right">state :</td>
+                            <td><select name="state" id="t6" class="tb">
+                                <option value="-1" selected>select..</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="karnataka">karnataka</option>
+                                <option value="Andhra pradesh">Andhra pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td align="right">city :</td>
+                            <td><select name="city" id="t7" class="tb">
+                                <option value="-1" selected>select..</option>
+                                <option value="Ranchi">Ranchi</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Mumbai">Mumbai</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td align="right">Address :</td>
+                                <td><textarea name="" id="" cols="" rows="5"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button>Reset</button>
+                                    <button><a href="login.html">submit</a></button>
+                                </td>
+                            </tr>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
